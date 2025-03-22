@@ -6,7 +6,7 @@ FlataDango is a web-based movie ticketing application that allows users to brows
 
 ## Features
 
-### Core Deliverables
+### Core Deliverables As Per Instructions Provided
 
 - **View Movie Details:**
   - Displays the first movie's details (poster, title, runtime, showtime, and available tickets) when the page loads.
@@ -17,7 +17,7 @@ FlataDango is a web-based movie ticketing application that allows users to brows
   - Lists all movies on the left sidebar.
   - Uses `GET /films` to fetch movie data and populate the list.
 
-- **Buy Ticket Functionality:**
+- **Buying Ticket Functionality:**
   - Clicking the **Buy Ticket** button decreases the available tickets count.
   - Prevents ticket purchase if the show is sold out.
   - Updates ticket count on the server using:
@@ -48,9 +48,9 @@ FlataDango is a web-based movie ticketing application that allows users to brows
   - Clicking on any movie in the list updates the displayed details.
   - Uses an additional `GET` request to fetch new movie data.
 
-## How I executed Installation & Setup
+## How I Executed Installation & Setup
 
-1. I Cloned the repository:
+1. I cloned the repository:
    ```sh
    git clone https://github.com/yourusername/flataDango.git
    cd flataDango
@@ -58,7 +58,7 @@ FlataDango is a web-based movie ticketing application that allows users to brows
 
 2. Open `index.html` in the browser to run the application and inspect it using chrome dev tools.
 
-## Technologies I Used in my code
+## Technologies I Used In My Code
 - **HTML**
 - **CSS** 
 - **JavaScript** 
