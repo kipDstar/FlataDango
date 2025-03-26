@@ -1,8 +1,8 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:4000";
 
 // Fetch and display the first movie's details
 function fetchFirstMovie() {
-    fetch(`${BASE_URL}/films/1`)
+    fetch(`${BASE_URL}/films`)
         .then(response => response.json())
         .then(movie => displayMovieDetails(movie));
 }
@@ -43,17 +43,16 @@ function fetchMovieList() {
         .then(movies => {
             const filmsList = document.getElementById("films");
             filmsList.innerHTML = ""; // Clear placeholder
+
             movies.forEach(movie => {
                 const li = document.createElement("li");
                 li.textContent = movie.title;
                 li.className = "film item";
-                if (movie.capacity - movie.tickets_sold === 0) {
-                    li.classList.add("sold-out");
-                }
                 li.addEventListener("click", () => fetchMovieDetails(movie.id));
                 filmsList.appendChild(li);
             });
-        });
+        })
+        .catch(error => console.error("Error fetching movie list:", error));
 }
 
 // Fetch movie details when clicked from list

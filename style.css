@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aqua;
 }
 
 header {
@@ -30,6 +31,11 @@ main {
 #movie-poster {
     width: 100%;
     border-radius: 10px;
+    border-width: 50px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2W7kK_Uzv18ZUv1aWQt7Why_UI50bRXgfDg&s.jpg');
+    background-size: contain;
+    background-position: center;
+
 }
 
 #films {
@@ -42,12 +48,12 @@ main {
     padding: 0.5rem;
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
-    background-color: white;
-    transition: background-color 0.3s;
+    background-color:cadetblue;
+    transition: background-color 2s;
 }
 
 #films li:hover {
-    background-color: #ddd;
+    background-color: red;
 }
 
 #films li.sold-out {
