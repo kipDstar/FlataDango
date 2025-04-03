@@ -1,6 +1,5 @@
 # FlataDango
 Week 3 Code Challenge
-# FlataDango
 
 FlataDango is a web-based movie ticketing application that allows users to browse available movies, view details, purchase tickets, and manage movie listings.
 
@@ -56,7 +55,26 @@ FlataDango is a web-based movie ticketing application that allows users to brows
    cd flataDango
    ```
 
-2. Open `index.html` in the browser to run the application and inspect it using chrome dev tools.
+2. Start the JSON Server to simulate the backend:
+   ```sh
+   json-server --watch db.json
+   ```
+
+3. Open `index.html` in the browser to run the application and inspect it using Chrome DevTools.
+
+4. Access the application via the hosted link provided by the JSON Server. By default, the JSON Server runs on `http://localhost:3000`. Open the following link in your browser:
+   ```
+   http://localhost:3000
+   ```
+
+## Using Virtual Server (JSON)
+
+The application uses a JSON Server to simulate a backend. The `db.json` file contains the movie data, and the server provides RESTful API endpoints for interacting with the data.
+
+To start the JSON Server, run:
+```sh
+json-server --watch db.json
+```
 
 ## Technologies I Used In My Code
 - **HTML**
@@ -73,7 +91,7 @@ FlataDango is a web-based movie ticketing application that allows users to brows
 | PATCH  | `/films/:id`     | Update tickets sold count |
 | DELETE | `/films/:id`     | Delete a movie |
 
-## Possible  Improvements
+## Possible Improvements
 - Implement user authentication for ticket purchases.
 - Add a search/filter feature for movies.
 - Enhance UI with animations and improved design.
